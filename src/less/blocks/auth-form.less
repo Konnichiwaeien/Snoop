@@ -1,0 +1,330 @@
+.auth-form {
+
+}
+
+.auth-form__btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 315px;
+  
+  &--outlined {
+    border: 1.5px solid @WHITE;
+    background: none;
+  }
+
+  &--arrow {
+    position: relative;
+    justify-content: space-between;
+    padding: 19px 16px;
+    padding-right: 43px;
+    line-height: 22px;
+
+    .auth-form__btn-icon {
+      transform: rotate(180deg);
+    }
+  }
+
+  &--muted {
+    position: relative;
+    flex-wrap: wrap;
+    padding: 9px 16px;
+    padding-right: 43px;
+    opacity: 0.8;
+    background: #2D3466;
+    border: 1px solid #585DF9;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    font-size: 18px;
+
+    .auth-form__btn-icon {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%) rotate(180deg);
+      right: 43px;
+    }
+  }
+}
+
+.auth_form__btn-caption {
+  width: 100%;
+  .font(short; 14px; 18px; 400);
+  text-align: left;
+}
+
+.auth-form__login {
+  margin-bottom: 30px;
+}
+
+.auth-form__signup {
+
+}
+
+.auth-form__group {
+  margin-bottom: 35px;
+}
+
+.auth-form__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.auth-form__label {
+  display: block;
+  margin-bottom: 22px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &--password {
+    position: relative;
+
+    .auth-form__icon {
+      position: absolute;
+      .align(vertical);
+      right: 22px;
+    }
+  }
+}
+
+.auth-form__input {
+  display: block;
+  width: 100%;
+  padding: 19px 22px;
+  border: 1px solid #585DF9;
+  border-radius: 13px;
+  .font(short; 16px; 18px; 300);
+  letter-spacing: 0.03em;
+  background: #2D3466;
+  color: fade(@primaryColor, 75%);
+  transition: border-color 0.3s linear, color 0.3s linear;
+
+  &::placeholder {
+    color: fade(@primaryColor, 75%);
+    transition: color 0.3s linear;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: @WHITE;
+    color: fade(@primaryColor, 100%);
+
+    &::placeholder {
+      color: fade(@primaryColor, 100%);
+    }
+  }
+}
+
+.auth-form__textarea {
+  resize: none;
+  min-height: 134px;
+}
+
+.auth-form__footer {
+  text-align: center;
+}
+
+.auth-form__link {
+  letter-spacing: 0.03em;
+  text-decoration: underline;
+  transition: color 0.3s linear;
+
+  &:hover,
+  &:focus {
+    color: fade(@primaryColor, 75%);
+  }
+
+  &:active {
+    color: fade(@primaryColor, 50%);
+  }
+}
+
+.auth-form__nav {
+  max-width: 315px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.auth-form__label--agreement {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  .auth-form__box {
+    flex: 0 0 20px;
+    height: 20px;
+    border: 1px solid @WHITE;
+    border-radius: 4px;
+    transition: background-color 0.3s linear;
+  }
+
+  .auth-form__checkbox {
+    position: absolute;
+    appearance: none;
+
+    &:checked + .auth-form__box {
+      background: @WHITE url('./../img/icons/tick-bold.svg') no-repeat center;
+    }
+  }
+}
+
+.auth-form__caption {
+  margin-left: 12px;
+}
+
+.auth-form__caption-link {
+  color: #999CFF;
+  text-decoration: underline;
+}
+
+.auth-form__label--remember {
+  display: none;
+}
+
+.auth-form__footer-suggestion {
+  display: none;
+}
+
+.auth__back-link {
+  display: none;
+}
+
+.auth-form--login {
+  .auth-form__login {
+    margin-bottom: 22px;
+  }
+}
+
+.auth-form__discount {
+  position: absolute;
+  .align(vertical);
+  right: 20px;
+  padding: 5px 8px;
+  border-radius: 20px;
+  .font(short; 11px; 11px; 700);
+  background: #CF0059;
+  color: @primaryColor;
+}
+
+.auth-form__subgroup {
+  margin-bottom: 18px;
+}
+
+.auth-form__actions-descr {
+  margin-bottom: 18px;
+  .font(short; 13px; 22px; 600);
+  color: #DEDEDE;
+}
+
+.auth-form--subscription {
+  .auth-form__group {
+    margin-bottom: 0;
+  }
+
+  .auth-form__actions {
+    margin-bottom: 40px;
+  }
+
+  .auth-form__label {
+    position: relative;
+    padding: 18px 50px;
+    border-radius: 15px;
+    .font(short; 18px; 22px; 600);
+    background: #2D3466;
+  }
+
+  .auth-form__box {
+    position: absolute;
+    .align(vertical);
+    left: 18px;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    transition: background-color 0.3s linear;
+  }
+
+  .auth-form__radio {
+    position: absolute;
+    appearance: none;
+
+    &:checked + .auth-form__label {
+      background: #fff;
+      color: #1D255A;
+
+      .auth-form__box {
+        border-color: #585DF9;
+        background: #585DF9 url('./../img/icons/tick.svg') no-repeat center;
+      }
+    }
+  }
+
+  .auth-form__signup {
+    margin-bottom: 10px;
+  }
+}
+
+.auth-form--support {
+  .auth-form__group {
+    margin-bottom: 40px;
+  }
+}
+
+.auth-form--account {
+ .auth-form__signup {
+   margin-bottom: 30px;
+   padding-left: 34px;
+ } 
+
+ .auth-form__cancel {
+   margin-bottom: 30px;
+ }
+
+ .auth-form__descr {
+   .font(short; 16px; 22px; 600);
+ }
+
+ .auth-form__descr-bold {
+   font-weight: 800;
+ }
+}
+
+
+
+@media @tablet-width {
+  .auth-form__group {
+    margin-bottom: 24px;
+  }
+
+  .auth-form .auth-form__label--remember {
+    display: flex;
+    margin-bottom: 25px;
+  }
+
+  .auth-form__footer-suggestion {
+    display: block;
+  }
+  
+  .auth__back-link {
+    display: inline-block;
+  }
+
+  .auth-form__link {
+    display: block;
+    margin-bottom: 75px;
+  }
+
+  .auth-form__descr {
+    margin-bottom: 20px;
+    font-weight: 300;
+  }
+
+  .auth-form--recovery {
+    .auth-form__login {
+      margin-bottom: 75px;
+    }
+  }
+}

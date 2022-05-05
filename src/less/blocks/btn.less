@@ -1,0 +1,51 @@
+.btn {
+  // .def-ib();
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: none;
+  padding: 16px;
+  border-radius: 13px;
+  .font(short; 20px; 20px; 600);
+  
+  &--primary {
+    background: @primaryBackBtn;
+    color: @primaryColor;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    transition: background 0.3s linear, color 0.3s linear;
+
+    &:hover {
+      background: darken(@primaryBackBtn, 5%);
+      color: darken(@primaryColor, 5%);
+    }
+
+    &:active {
+      background: darken(@primaryBackBtn, 15%);
+      color: darken(@primaryColor, 15%);
+    }
+  }
+
+  &--outlined {
+    border: 1.5px solid @WHITE;
+    background: none;
+    color: @primaryColor;
+    transition: border-color 0.3s linear, color 0.3s linear;
+
+    &:hover {
+      border-color: darken(@WHITE, 20%);
+      color: darken(@primaryColor, 20%);
+    }
+
+    &:active {
+      border-color: darken(@WHITE, 35%);
+      color: darken(@primaryColor, 35%);
+    }
+  }
+
+  &--icon {
+    padding: 0;
+    border: none;
+    outline: none;
+    // font-size: 0;
+  }
+}

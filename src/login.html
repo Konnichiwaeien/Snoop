@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Share link and find location">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="">
+  <title>Snoop | Log In</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+
+
+
+
+
+
+<body>
+  <div class="main-container">
+    <header class="main-header">
+      <div class="main-header__container">
+        <div class="main-header__info">
+          <p class="main-header__logo">Snoop</p>
+        </div>
+
+
+        <nav class="main-header__nav  nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="auth.html">Instructions</a>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link" href="recovery.html">Recovery</a>
+            </li>
+          </ul>
+
+          <ul class="nav__list  nav__user">
+            <li class="nav__item  nav__user-item">
+              <a class="nav__link  nav__user-link  nav__user-link--outlined" href="signup.html">Sign Up</a>
+            </li>
+
+            <li class="nav__item  nav__user-item">
+              <a class="nav__link  nav__user-link  nav__user-link--filled">Log In</a>
+            </li>
+
+            <li class="nav__item  nav__user-item">
+              <div class="nav__dropdown  dropdown">
+                <input class="dropdown__textbox" placeholder="Dropdown Text" type="text" readonly>
+                <div class="dropdown__options">
+                  <div class="dropdown__option" data-option="ENG">
+                    ENG
+                  </div>
+
+                  <div class="dropdown__option" data-option="RUS">
+                    RUS
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+
+
+
+
+    <main class="main">
+      <div class="main__container">
+        <section class="auth  auth--login">
+          <header class="auth__header">
+            <div class="auth__header-nav">
+              <a class="auth__back  btn  btn--icon" href="index.html">
+                <svg class="auth__header-icon  svg-icon" width="9" height="15">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#arrow"></use>
+                </svg>
+                <span class="auth__back-caption">Back</span>
+              </a>
+            </div>
+
+            <h1 class="auth__title">Login</h1>
+            <p class="auth__error">
+              Email and Password combination are incorrect
+              <svg class="auth__error-icon  svg-icon" width="11" height="11">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#cross"></use>
+              </svg>
+            </p>
+          </header>
+
+          <div class="auth__container">
+            <form class="auth__form  auth-form  auth-form--login" action="/" method="POST">
+              <fieldset class="auth-form__group">
+                <label class="auth-form__label">
+                  <input class="auth-form__input  auth-form__email" name="email" placeholder="Email" type="email"
+                         required>
+                </label>
+
+                <label class="auth-form__label  auth-form__label--password">
+                  <input class="auth-form__input  auth-form__password" name="password" placeholder="Password"
+                         type="password"
+                         required>
+                  <svg class="auth-form__icon  svg-icon" width="22" height="16">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#eye"></use>
+                  </svg>
+                </label>
+              </fieldset>
+
+              <label class="auth-form__label  auth-form__label--agreement  auth-form__label--remember">
+                <input class="auth-form__checkbox  auth-form__checkbox--agreement" name="agreement" type="checkbox">
+                <span class="auth-form__box"></span>
+                <span class="auth-form__caption">
+                  Rememer me
+                </span>
+              </label>
+
+
+              <div class="auth-form__actions">
+                <button class="auth-form__btn  auth-form__login  btn  btn--primary" type="button">
+                  Log In
+                </button>
+              </div>
+
+
+              <footer class="auth-form__footer">
+                <a class="auth-form__link" href="recovery.html">Forgot Password</a>
+
+                <div class="auth-form__footer-suggestion">
+                  <p class="auth-form__descr">
+                    Dont have an account?
+                  </p>
+
+                  <a class="auth-form__btn  auth-form__signup  btn  btn--outlined" href="signup.html">
+                    Sign Up
+                  </a>
+                </div>
+              </footer>
+            </form>
+          </div>
+        </section>
+      </div>
+    </main>
+
+
+
+
+
+
+    <footer class="main-footer">
+      <div class="main-footer__container">
+        <div class="main-footer__panel  main-footer__panel--top">
+          <div class="main-header__info">
+            <p class="main-header__logo">Snoop</p>
+          </div>
+
+
+          <div class="main-footer__nav  nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="auth.html">Instructions</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link" href="support.html">Contact us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="main-footer__panel">
+          <ul class="main-footer__subnav">
+            <li class="main-footer__subnav-item">
+              <a class="main-footer__subnav-link" href="#">Privacy Policy</a>
+            </li>
+
+            <li class="main-footer__subnav-item">
+              <a class="main-footer__subnav-link" href="#">Terms of Use</a>
+            </li>
+
+            <li class="main-footer__subnav-item">
+              <a class="main-footer__subnav-link" href="#">Subscribtion Policy</a>
+            </li>
+          </ul>
+
+
+          <p class="main-footer__copyright">
+            Copyright © Snoop 2022
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/main.min.js"></script>
+</body>
+</html>
