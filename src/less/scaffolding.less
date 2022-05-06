@@ -12,10 +12,11 @@ html {
 
 body {
   min-width: 320px;
-  // height: 100vh;
+  min-height: 100vh;
   background: @primaryBack;
   color: @primaryColor;
   .font(full);
+  position: relative;
 }
 
 
@@ -50,4 +51,8 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
   overflow: hidden;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  appearance: none;
 }

@@ -88,7 +88,7 @@
 
 
 
-    <main class="main">
+    <div class="main  main--home">
       <div class="main__container">
         <section class="auth  auth--home">
           <header class="auth__header">
@@ -97,9 +97,61 @@
               share link and find location
             </p>
 
-            <form class="auth__form-search  search-form" action="/" method="POST">
+            <form class="auth__form  form  form--search" action="/" method="POST">
+              <p class="form__subgroup">
+                <label class="form__label  form__label--search">
+                  <span class="form__label-media">
+                    <svg class="form__icon-share  form__icon--upload  svg-icon" width="20" height="20">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#upload"></use>
+                    </svg>
+                  </span>
 
+                  <input class="form__input  form__search" name="search" placeholder="Link" type="search">
+
+                  <button class="form__remove  btn" type="button">
+                    <svg class="form__icon-share  form__icon--remove  svg-icon" width="18" height="18">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#remove"></use>
+                    </svg>
+                  </button>
+                </label>
+
+                <button class="form__btn  form__btn--search  btn  btn--primary" type="button">
+                  <svg class="form__icon-share  form__icon--share  svg-icon" width="21" height="21">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#share"></use>
+                  </svg>
+
+                  <svg class="form__icon-share  form__icon--chain  svg-icon" width="20" height="20">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#chain"></use>
+                  </svg>
+
+                  <span class="form__btn-caption">Copy</span>
+                </button>
+              </p>
+
+              <p class="form__descr">
+                Using our services, you agree with the Terms of Service and Privacy Policy.
+              </p>
             </form>
+
+            <section class="auth__offer  offer  offer--home">
+              <section class="offer__item">
+                <div class="offer__media">
+                </div>
+
+                <div class="offer__text">
+                  <h3 class="offer__title">Funny cats</h3>
+                  <p class="offer__time">10:08</p>
+                  <button class="offer__btn  btn  btn--primary" type="button">
+                    <svg class="offer__icon  svg-icon" width="13" height="17">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#circle"></use>
+                    </svg>
+                    change link
+                  </button>
+                </div>
+
+                <p class="offer__badge">offered link</p>
+              </section>
+            </section>
 
             <div class="auth__media">
               <img class="auth__img" src="../img/map.svg" width="375" height="227" alt="map">
@@ -112,8 +164,231 @@
 
           </div>
         </section>
+
+
+        <section class="links">
+          <div class="links__container">
+            <header class="links__header">
+              <h2 class="links__title">Your links</h2>
+              <div class="links__actions">
+                <button class="links__btn  btn" type="button">
+                  <svg class="links__btn-icon  svg-icon" width="15" height="20">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#question"></use>
+                  </svg>
+                </button>
+
+                <button class="links__btn  btn" type="button">
+                  <svg class="links__btn-icon  svg-icon" width="20" height="20">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#settings"></use>
+                  </svg>
+                </button>
+              </div>
+
+              <p class="links__message">You don’t have any links now</p>
+            </header>
+
+
+            <div class="links__items">
+              <section class="links__item">
+                <div class="links__block  links__block--outer">
+                  <button class="links__open  btn" type="button">
+                    <svg class="links__btn-icon  svg-icon" width="9" height="15">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#arrow"></use>
+                    </svg>
+                  </button>
+
+                  <div class="links__item-column  links__item-column--left">
+                    <div class="links__item-media">
+
+                    </div>
+                  </div>
+
+
+                  <div class="links__item-column  links__item-column--right">
+                    <header class="links__item-header">
+                      <h3 class="links__item-title">Video Title</h3>
+                      <p class="links__item-date">14.02</p>
+                    </header>
+
+                    <div class="links__item-info">
+                      <p class="links__item-last">Last open in New York</p>
+                      <p class="links__item-badge">
+                        <svg class="links__item-icon  svg-icon" width="13" height="9">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#eye"></use>
+                        </svg>
+                        5
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="links__visits">
+                  <div class="links__inner">
+                    <div class="links__visit">
+                      <p class="links__visits-date">02/14/2022</p>
+                      <div class="links__visits-items">
+                        <div class="links__block">
+                          <div class="links__item-column  links__item-column--left">
+                            <div class="links__item-media">
+                              <svg class="links__item-ad  svg-icon" width="32" height="24">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#ad"></use>
+                              </svg>
+                            </div>
+                          </div>
+
+
+                          <div class="links__item-column  links__item-column--right">
+                            <header class="links__item-header">
+                              <p class="links__item-title  links__item-title--small">46.36.135.000</p>
+                              <p class="links__item-date  links__item-date--time">
+                                <svg class="links__item-icon  links__item-icon--clock  svg-icon" width="11" height="11">
+                                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#clock">
+                                  </use>
+                                </svg>
+                                18:40
+                              </p>
+                            </header>
+
+                            <div class="links__item-info">
+                              <p class="links__item-last">Last open in New York</p>
+                              <p class="links__item-badge">
+                                <svg class="links__item-icon  svg-icon" width="13" height="9">
+                                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#eye"></use>
+                                </svg>
+                                5
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="links__item">
+                <div class="links__block  links__block--outer">
+                  <button class="links__open  btn" type="button">
+                    <svg class="links__btn-icon  svg-icon" width="9" height="15">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#arrow"></use>
+                    </svg>
+                  </button>
+
+                  <div class="links__item-column  links__item-column--left">
+                    <div class="links__item-media">
+
+                    </div>
+                  </div>
+
+
+                  <div class="links__item-column  links__item-column--right">
+                    <header class="links__item-header">
+                      <h3 class="links__item-title">Video Title</h3>
+                      <p class="links__item-date">14.02</p>
+                    </header>
+
+                    <div class="links__item-info">
+                      <p class="links__item-last">Last open in New York</p>
+                      <p class="links__item-badge">
+                        <svg class="links__item-icon  svg-icon" width="13" height="9">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#eye"></use>
+                        </svg>
+                        5
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="links__visits">
+                  <div class="links__inner">
+                    <div class="links__visit">
+                      <p class="links__visits-date">02/14/2022</p>
+                      <div class="links__visits-items">
+                        <div class="links__block">
+                          <div class="links__item-column  links__item-column--left">
+                            <div class="links__item-media">
+                              <svg class="links__item-ad  svg-icon" width="32" height="24">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#ad"></use>
+                              </svg>
+                            </div>
+                          </div>
+
+
+                          <div class="links__item-column  links__item-column--right">
+                            <header class="links__item-header">
+                              <p class="links__item-title  links__item-title--small">46.36.135.000</p>
+                              <p class="links__item-date  links__item-date--time">
+                                <svg class="links__item-icon  links__item-icon--clock  svg-icon" width="11" height="11">
+                                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#clock">
+                                  </use>
+                                </svg>
+                                18:40
+                              </p>
+                            </header>
+
+                            <div class="links__item-info">
+                              <p class="links__item-last">Last open in New York</p>
+                              <p class="links__item-badge">
+                                <svg class="links__item-icon  svg-icon" width="13" height="9">
+                                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#eye"></use>
+                                </svg>
+                                5
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+
+            <footer class="links__footer">
+              <button class="links__btn  links__badge  btn  btn--primary  badge" type="button">
+                <div class="badge__icon-container">
+                  <svg class="svg-icon" width="27" height="27">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                </div>
+
+                <div class="badge__info">
+                  <span class="badge__title">Go Pro !</span>
+                  <span class="badge__descr">Unlock all the features in Pro.</span>
+                </div>
+              </button>
+            </footer>
+          </div>
+        </section>
       </div>
-    </main>
+
+
+
+      <section class="advertisement">
+        <div class="advertisement__container">
+          <div class="advertisement__item  advertisement__item--big">
+            <p class="advertisement__actions">
+              <svg class="advertisement__icon  svg-icon" width="12" height="12">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#info"></use>
+              </svg>
+
+              <svg class="advertisement__icon  advertisement__icon--cross  svg-icon" width="9" height="9">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#cross"></use>
+              </svg>
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+
+      <section class="instructions">
+
+      </section>
+    </div>
 
 
 

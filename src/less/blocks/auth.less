@@ -171,9 +171,31 @@
   }
 
   .auth--home {
+    .auth__media {
+      display: none;
+    }
+    
+    .auth__header {
+      text-align: center;
+    }
+
     .auth__descr {
       position: relative;
       .font(short; 24px; 24px);
+      padding-bottom: 40px;
+
+      &::after {
+        .def-pseudo();
+        .align(horizont);
+        bottom: 0;
+        width: 166px;
+        height: 2px;
+        background: #fff;
+      }
+    }
+
+    .auth__title {
+      margin-bottom: 15px;
     }
   }
 

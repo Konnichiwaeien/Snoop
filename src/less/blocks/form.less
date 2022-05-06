@@ -1,8 +1,8 @@
-.auth-form {
+.form {
 
 }
 
-.auth-form__btn {
+.form__btn {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -21,7 +21,7 @@
     padding-right: 43px;
     line-height: 22px;
 
-    .auth-form__btn-icon {
+    .form__btn-icon {
       transform: rotate(180deg);
     }
   }
@@ -37,7 +37,7 @@
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
     font-size: 18px;
 
-    .auth-form__btn-icon {
+    .form__btn-icon {
       position: absolute;
       top: 50%;
       transform: translateY(-50%) rotate(180deg);
@@ -52,25 +52,25 @@
   text-align: left;
 }
 
-.auth-form__login {
+.form__login {
   margin-bottom: 30px;
 }
 
-.auth-form__signup {
+.form__signup {
 
 }
 
-.auth-form__group {
+.form__group {
   margin-bottom: 35px;
 }
 
-.auth-form__actions {
+.form__actions {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.auth-form__label {
+.form__label {
   display: block;
   margin-bottom: 22px;
 
@@ -81,15 +81,23 @@
   &--password {
     position: relative;
 
-    .auth-form__icon {
+    .form__icon {
       position: absolute;
       .align(vertical);
       right: 22px;
     }
   }
+
+  &--search {
+    position: relative;
+
+    .form__input {
+      border: none;
+    }
+  }
 }
 
-.auth-form__input {
+.form__input {
   display: block;
   width: 100%;
   padding: 19px 22px;
@@ -117,16 +125,16 @@
   }
 }
 
-.auth-form__textarea {
+.form__textarea {
   resize: none;
   min-height: 134px;
 }
 
-.auth-form__footer {
+.form__footer {
   text-align: center;
 }
 
-.auth-form__link {
+.form__link {
   letter-spacing: 0.03em;
   text-decoration: underline;
   transition: color 0.3s linear;
@@ -141,19 +149,19 @@
   }
 }
 
-.auth-form__nav {
+.form__nav {
   max-width: 315px;
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
 }
 
-.auth-form__label--agreement {
+.form__label--agreement {
   position: relative;
   display: flex;
   align-items: center;
 
-  .auth-form__box {
+  .form__box {
     flex: 0 0 20px;
     height: 20px;
     border: 1px solid @WHITE;
@@ -161,30 +169,30 @@
     transition: background-color 0.3s linear;
   }
 
-  .auth-form__checkbox {
+  .form__checkbox {
     position: absolute;
     appearance: none;
 
-    &:checked + .auth-form__box {
+    &:checked + .form__box {
       background: @WHITE url('./../img/icons/tick-bold.svg') no-repeat center;
     }
   }
 }
 
-.auth-form__caption {
+.form__caption {
   margin-left: 12px;
 }
 
-.auth-form__caption-link {
+.form__caption-link {
   color: #999CFF;
   text-decoration: underline;
 }
 
-.auth-form__label--remember {
+.form__label--remember {
   display: none;
 }
 
-.auth-form__footer-suggestion {
+.form__footer-suggestion {
   display: none;
 }
 
@@ -192,13 +200,13 @@
   display: none;
 }
 
-.auth-form--login {
-  .auth-form__login {
+.form--login {
+  .form__login {
     margin-bottom: 22px;
   }
 }
 
-.auth-form__discount {
+.form__discount {
   position: absolute;
   .align(vertical);
   right: 20px;
@@ -209,26 +217,26 @@
   color: @primaryColor;
 }
 
-.auth-form__subgroup {
+.form__subgroup {
   margin-bottom: 18px;
 }
 
-.auth-form__actions-descr {
+.form__actions-descr {
   margin-bottom: 18px;
   .font(short; 13px; 22px; 600);
   color: #DEDEDE;
 }
 
-.auth-form--subscription {
-  .auth-form__group {
+.form--subscription {
+  .form__group {
     margin-bottom: 0;
   }
 
-  .auth-form__actions {
+  .form__actions {
     margin-bottom: 40px;
   }
 
-  .auth-form__label {
+  .form__label {
     position: relative;
     padding: 18px 50px;
     border-radius: 15px;
@@ -236,7 +244,7 @@
     background: #2D3466;
   }
 
-  .auth-form__box {
+  .form__box {
     position: absolute;
     .align(vertical);
     left: 18px;
@@ -247,64 +255,157 @@
     transition: background-color 0.3s linear;
   }
 
-  .auth-form__radio {
+  .form__radio {
     position: absolute;
     appearance: none;
 
-    &:checked + .auth-form__label {
+    &:checked + .form__label {
       background: #fff;
       color: #1D255A;
 
-      .auth-form__box {
+      .form__box {
         border-color: #585DF9;
         background: #585DF9 url('./../img/icons/tick.svg') no-repeat center;
       }
     }
   }
 
-  .auth-form__signup {
+  .form__signup {
     margin-bottom: 10px;
   }
 }
 
-.auth-form--support {
-  .auth-form__group {
+.form--support {
+  .form__group {
     margin-bottom: 40px;
   }
 }
 
-.auth-form--account {
- .auth-form__signup {
+.form--account {
+ .form__signup {
    margin-bottom: 30px;
    padding-left: 34px;
  } 
 
- .auth-form__cancel {
+ .form__cancel {
    margin-bottom: 30px;
  }
 
- .auth-form__descr {
+ .form__descr {
    .font(short; 16px; 22px; 600);
  }
 
- .auth-form__descr-bold {
+ .form__descr-bold {
    font-weight: 800;
  }
 }
 
+.form--search {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 13px;
+
+  .form__label {
+    position: relative;
+    margin-right: 9px;
+    flex-grow: 1;
+  }
+
+  .form__subgroup {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+
+  .form__search {
+    padding-left: 66px;
+    padding-right: 40px;
+    .font(short; 17px; 20px; 700);
+  }
+
+  .form__label-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    .align(vertical);
+    width: 44px;
+    padding: 0 12px;
+    height: 36px;
+    left: 11px;
+    border-right: 1px solid #94929C;
+  }
+
+  .form__icon-share {
+    position: absolute;
+    
+  }
+
+  .form__icon {
+    &--upload {
+      position: static;
+      // left: 11px;
+      // .align(vertical);
+    }
+  
+    &--remove {
+      right: 11px;
+      .align(vertical);
+    }
+  
+    &--share {
+      position: static;
+    }
+
+
+    &--chain {
+      display: none;
+    }
+  }
+
+  .form__btn--search {
+    width: 56px;
+    padding: 0;
+
+    .form__icon-share {
+      position: static;
+    }
+
+    .form__btn-caption {
+      display: none;
+    }
+  }
+
+  .form__remove {
+    padding: 0;
+    position: absolute;
+    .align(vertical);
+    right: 9px;
+  }
+
+  .form__descr {
+    display: none;
+    margin-bottom: 50px;
+    width: 100%;
+    .font(short; 16px; 18px; 400);
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
+}
 
 
 @media @tablet-width {
-  .auth-form__group {
+  .form__group {
     margin-bottom: 24px;
   }
 
-  .auth-form .auth-form__label--remember {
+  .form .form__label--remember {
     display: flex;
     margin-bottom: 25px;
   }
 
-  .auth-form__footer-suggestion {
+  .form__footer-suggestion {
     display: block;
   }
   
@@ -312,19 +413,80 @@
     display: inline-block;
   }
 
-  .auth-form__link {
+  .form__link {
     display: block;
     margin-bottom: 75px;
   }
 
-  .auth-form__descr {
+  .form__descr {
     margin-bottom: 20px;
     font-weight: 300;
   }
 
-  .auth-form--recovery {
-    .auth-form__login {
+  .form--recovery {
+    .form__login {
       margin-bottom: 75px;
+    }
+  }
+
+
+
+
+
+  .form--search {
+    .form__descr {
+      display: block;
+    }
+
+    .form__input {
+      padding: 21px 22px;
+      padding-left: 66px;
+      padding-right: 150px;
+      background: #FFFFFF;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+      color: #1D1D1D;
+    }
+
+    .form__remove {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .form__input:focus + .form__remove {
+      opacity: 1;
+    }
+
+    .form__btn--search {
+      height: 54px;
+      position: absolute;
+      width: auto;
+      padding: 16px 20px;
+      right: 14px;
+      top: 2px;
+      .font(short; 17px; 20px; 600);
+
+      .form__icon {
+        &--chain {
+          display: inline-block;
+          margin-right: 12px;
+        }
+
+        &--share {
+          display: none;
+        }
+      }
+  
+      .form__icon-share {
+
+      }
+
+      .form__btn-caption {
+        display: inline;
+      }
+    }
+
+    .form__remove {
+      right: 120px;
     }
   }
 }
