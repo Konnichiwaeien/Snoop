@@ -5,7 +5,7 @@
   <meta name="description" content="Share link and find location">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="">
-  <title>Snoop | Authentication</title>
+  <title>Snoop | main-sectionentication</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800&display=swap"
@@ -33,10 +33,6 @@
             <li class="nav__item">
               <a class="nav__link">Instructions</a>
             </li>
-
-            <li class="nav__item">
-              <a class="nav__link" href="recovery.html">Recovery</a>
-            </li>
           </ul>
 
           <ul class="nav__list  nav__user">
@@ -49,7 +45,7 @@
             </li>
 
             <li class="nav__item  nav__user-item">
-              <div class="nav__dropdown  dropdown">
+              <div class="nav__dropdown  dropdown  dropdown--nav">
                 <input class="dropdown__textbox" placeholder="Dropdown Text" type="text" readonly>
                 <div class="dropdown__options">
                   <div class="dropdown__option" data-option="ENG">
@@ -72,32 +68,32 @@
 
 
 
-    <main class="main">
+    <main class="main  main--inner">
       <div class="main__container">
-        <section class="auth  auth--auth">
-          <header class="auth__header">
-            <div class="auth__header-nav">
-              <a class="auth__back  btn  btn--icon" href="index.html">
-                <svg class="auth__back-icon  svg-icon" width="9" height="15">
+        <section class="main-section  main-section--auth">
+          <header class="main-section__header">
+            <div class="main-section__header-nav">
+              <a class="main-section__back  btn  btn--icon" href="index.html">
+                <svg class="main-section__back-icon  svg-icon" width="9" height="15">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#arrow"></use>
                 </svg>
-                <span class="auth__back-caption">Back</span>
+                <span class="main-section__back-caption">Back</span>
               </a>
             </div>
 
-            <h1 class="auth__title  auth__title--big">Snoop</h1>
-            <p class="auth__descr">
+            <h1 class="main-section__title  main-section__title--big">Snoop</h1>
+            <p class="main-section__descr">
               share link and find location
             </p>
-            <div class="auth__media">
-              <img class="auth__img" src="../img/map.svg" width="375" height="227" alt="map">
+            <div class="main-section__media">
+              <img class="main-section__img" src="../img/map.svg" width="375" height="227" alt="map">
             </div>
           </header>
 
 
 
-          <div class="auth__container">
-            <div class="auth__form  form  form">
+          <div class="main-section__container">
+            <div class="main-section__form  form  form">
               <div class="form__actions">
                 <a class="form__btn  form__btn  form__login  btn  btn--primary" href="login.html">
                   Log In

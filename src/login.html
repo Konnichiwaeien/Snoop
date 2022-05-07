@@ -33,10 +33,6 @@
             <li class="nav__item">
               <a class="nav__link" href="auth.html">Instructions</a>
             </li>
-
-            <li class="nav__item">
-              <a class="nav__link" href="recovery.html">Recovery</a>
-            </li>
           </ul>
 
           <ul class="nav__list  nav__user">
@@ -74,28 +70,28 @@
 
     <main class="main">
       <div class="main__container">
-        <section class="auth  auth--login">
-          <header class="auth__header">
-            <div class="auth__header-nav">
-              <a class="auth__back  btn  btn--icon" href="index.html">
-                <svg class="auth__header-icon  svg-icon" width="9" height="15">
+        <section class="main-section  main-section--login">
+          <header class="main-section__header">
+            <div class="main-section__header-nav">
+              <a class="main-section__back  btn  btn--icon" href="index.html">
+                <svg class="main-section__header-icon  svg-icon" width="9" height="15">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#arrow"></use>
                 </svg>
-                <span class="auth__back-caption">Back</span>
+                <span class="main-section__back-caption">Back</span>
               </a>
             </div>
 
-            <h1 class="auth__title">Login</h1>
-            <p class="auth__error">
+            <h1 class="main-section__title">Login</h1>
+            <p class="main-section__error">
               Email and Password combination are incorrect
-              <svg class="auth__error-icon  svg-icon" width="11" height="11">
+              <svg class="main-section__error-icon  svg-icon" width="11" height="11">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#cross"></use>
               </svg>
             </p>
           </header>
 
-          <div class="auth__container">
-            <form class="auth__form  form  form--login" action="/" method="POST">
+          <div class="main-section__container">
+            <form class="main-section__form  form  form--login" action="/" method="POST">
               <fieldset class="form__group">
                 <label class="form__label">
                   <input class="form__input  form__email" name="email" placeholder="Email" type="email"

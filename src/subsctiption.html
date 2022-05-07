@@ -33,10 +33,6 @@
             <li class="nav__item">
               <a class="nav__link" href="auth.html">Instructions</a>
             </li>
-
-            <li class="nav__item">
-              <a class="nav__link" href="recovery.html">Recovery</a>
-            </li>
           </ul>
 
           <ul class="nav__list  nav__user">
@@ -49,7 +45,7 @@
             </li>
 
             <li class="nav__item  nav__user-item">
-              <div class="nav__dropdown  dropdown">
+              <div class="nav__dropdown  dropdown  dropdown--nav">
                 <input class="dropdown__textbox" placeholder="Dropdown Text" type="text" readonly>
                 <div class="dropdown__options">
                   <div class="dropdown__option" data-option="ENG">
@@ -72,23 +68,23 @@
 
 
 
-    <main class="main  main--subscription">
+    <main class="main  main--subscription  main--inner">
       <div class="main__container">
-        <section class="auth">
-          <div class="auth__container">
-            <div class="auth__features">
-              <div class="auth__features-picture">
-                <img class="auth__features-img" src="img/star.svg" width="151" height="137" alt="star">
+        <section class="main-section">
+          <div class="main-section__container">
+            <div class="main-section__features">
+              <div class="main-section__features-picture">
+                <img class="main-section__features-img" src="img/star.svg" width="151" height="137" alt="star">
               </div>
 
-              <ul class="auth__features-items">
-                <li class="auth__feature">No Ads</li>
-                <li class="auth__feature">Unlimited <br> link creation</li>
+              <ul class="main-section__features-items">
+                <li class="main-section__feature">No Ads</li>
+                <li class="main-section__feature">Unlimited <br> link creation</li>
               </ul>
             </div>
 
 
-            <form class="auth__form  form  form--subscription" action="/" method="POST">
+            <form class="main-section__form  form  form--subscription" action="/" method="POST">
               <fieldset class="form__group">
                 <p class="form__subgroup">
                   <input class="form__radio" id="month" name="price" value="month" type="radio" checked>
@@ -135,7 +131,7 @@
                   <svg class="form__btn-icon  svg-icon" width="9" height="15">
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#arrow"></use>
                   </svg>
-                  <span class="auth_form__btn-caption">
+                  <span class="main-section_form__btn-caption">
                     with ads
                   </span>
                 </button>

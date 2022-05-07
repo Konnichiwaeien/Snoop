@@ -1,0 +1,139 @@
+.modal {
+  // overflow: hidden;
+}
+
+.modal__container {
+
+}
+
+.modal--agreement {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  border-radius: 0;
+
+  .modal__container {
+    max-width: 270px;
+    background: #FFFFFF;
+    opacity: 0.95;
+    border-radius: 13px;
+  }
+
+  .modal__body {
+    padding: 20px 40px;
+    text-align: center;
+    color: #1C1C1C;
+    border-bottom: 1px solid rgba(60, 60, 67, 0.36);
+  }
+
+  .modal__title {
+    margin-bottom: 10px;
+    .font(short; 17px; 22px; 700);
+    color: #1C1C1C;
+  }
+
+  .modal__descr {
+    .font(shortest; 13px; 16px);
+  }
+
+  .modal__link {
+    color: #268DF2; 
+  }
+
+  .modal__btn {
+    width: 100%;
+    border-radius: 0;
+    .font(short; 17px; 22px; 700);
+    color: #007AFF;
+    padding: 10px;
+
+
+    &--agree {
+      border-bottom: 1px solid rgba(60, 60, 67, 0.36);
+    }
+
+    &--cancel {
+      font-weight: 400;
+    }
+  }
+}
+
+.modal--instructions {
+  // padding-bottom: 30px;
+  &::after {
+    content: none;
+  }
+
+  .modal__container {
+    .container();
+    max-width: 570px;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .modal__title {
+    margin-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    position: relative;
+    .font(short; 16px; 24px; 800);
+    text-align: center;
+    color: #3C3363;
+    // padding-left: 10px;
+  }
+
+  .modal__back {
+    position: absolute;
+    left: -5px;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    padding: 0;
+
+    .modal__btn-icon {
+      fill: #3C3363;
+    }
+  }
+
+  .modal__close {
+    position: absolute;
+    right: -5px;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    padding: 0;
+
+    .modal__btn-icon {
+      fill: #3C3363;
+    }
+  }
+}
+
+.modal--active {
+  display: flex;
+}
+
+
+// @media @tablet-width {
+//   .home {
+//     .modal {
+//       display: none;
+//     }
+//   }
+// }
+@media @tablet-width {
+  .modal--instructions {
+    display: none;
+  }
+
+  .modal--main {
+    display: none;
+  }
+}

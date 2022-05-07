@@ -22,6 +22,7 @@
     line-height: 22px;
 
     .form__btn-icon {
+      fill: #fff;
       transform: rotate(180deg);
     }
   }
@@ -85,6 +86,7 @@
       position: absolute;
       .align(vertical);
       right: 22px;
+      fill: #fff;
     }
   }
 
@@ -206,6 +208,8 @@
   }
 }
 
+
+
 .form__discount {
   position: absolute;
   .align(vertical);
@@ -218,13 +222,17 @@
 }
 
 .form__subgroup {
-  margin-bottom: 18px;
+  margin-bottom: 19px;
 }
 
 .form__actions-descr {
   margin-bottom: 18px;
   .font(short; 13px; 22px; 600);
   color: #DEDEDE;
+}
+
+.form__descr-link {
+  text-decoration: underline;
 }
 
 .form--subscription {
@@ -347,6 +355,7 @@
       position: static;
       // left: 11px;
       // .align(vertical);
+      fill: #585DF9;
     }
   
     &--remove {
@@ -386,7 +395,7 @@
 
   .form__descr {
     display: none;
-    margin-bottom: 50px;
+    margin-bottom: 37px;
     width: 100%;
     .font(short; 16px; 18px; 400);
     letter-spacing: 0.03em;
@@ -434,12 +443,19 @@
 
 
   .form--search {
-    .form__descr {
-      display: block;
+    .form__subgroup {
+      margin-bottom: 20px;
     }
 
+
+    .form__descr {
+      display: block;
+      margin-bottom: 50px;
+    }
+
+    
     .form__input {
-      padding: 21px 22px;
+      padding: 20px 22px;
       padding-left: 66px;
       padding-right: 150px;
       background: #FFFFFF;
@@ -462,7 +478,8 @@
       width: auto;
       padding: 16px 20px;
       right: 14px;
-      top: 2px;
+      // top: 2px;
+      .align(vertical);
       .font(short; 17px; 20px; 600);
 
       .form__icon {

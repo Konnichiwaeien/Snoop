@@ -1,5 +1,6 @@
 .nav {
   display: flex;
+  padding-right: 5px;
 }
 
 .nav__list {
@@ -14,6 +15,10 @@
 
 .nav__item {
   margin-right: 29px;
+
+  &:only-child {
+    margin-right: 29px;
+  }
 }
 
 .nav__link {
@@ -28,6 +33,12 @@
 
   &:active {
     color: fade(@primaryColor, 50%);
+  }
+}
+
+.nav__user-item {
+  &:last-of-type {
+    margin-right: 0;
   }
 }
 

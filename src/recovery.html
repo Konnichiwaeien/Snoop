@@ -45,7 +45,7 @@
             </li>
 
             <li class="nav__item  nav__user-item">
-              <div class="nav__dropdown  dropdown">
+              <div class="nav__dropdown  dropdown  dropdown--nav">
                 <input class="dropdown__textbox" placeholder="Dropdown Text" type="text" readonly>
                 <div class="dropdown__options">
                   <div class="dropdown__option" data-option="ENG">
@@ -68,39 +68,39 @@
 
 
 
-    <main class="main">
+    <main class="main  main--inner">
       <div class="main__container">
-        <section class="auth">
-          <header class="auth__header">
-            <div class="auth__header-nav">
-              <a class="auth__back  btn  btn--icon" href="index.html">
-                <svg class="svg-icon" width="9" height="15">
+        <section class="main-section">
+          <header class="main-section__header">
+            <div class="main-section__header-nav">
+              <a class="main-section__back  btn  btn--icon" href="index.html">
+                <svg class="main-section__back-icon  svg-icon" width="9" height="15">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#arrow"></use>
                 </svg>
-                <span class="auth__back-caption">Back</span>
+                <span class="main-section__back-caption">Back</span>
               </a>
             </div>
 
-            <h1 class="auth__title">New Password</h1>
-            <p class="auth__error">
+            <h1 class="main-section__title">New Password</h1>
+            <p class="main-section__error">
               Email address not found
-              <svg class="auth__error-icon  svg-icon" width="11" height="11">
+              <svg class="main-section__error-icon  svg-icon" width="11" height="11">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#cross"></use>
               </svg>
             </p>
-            <p class="auth__descr">
+            <p class="main-section__descr">
               Please, enter your Email
             </p>
 
-            <!-- <p class="auth__descr  auth__descr--password">
+            <!-- <p class="main-section__descr  main-section__descr--password">
               Please, enter new passowrd
             </p> -->
           </header>
 
 
 
-          <div class="auth__container">
-            <form class="auth__form  form  form--recovery" action="/" method="POST">
+          <div class="main-section__container">
+            <form class="main-section__form  form  form--recovery" action="/" method="POST">
               <fieldset class="form__group">
                 <label class="form__label">
                   <input class="form__input  form__email" name="email" placeholder="Email" type="email"
@@ -129,7 +129,7 @@
               </footer>
             </form>
 
-            <!-- <form class="auth__form  form  form--recovery  form--password" action="/" method="POST">
+            <!-- <form class="main-section__form  form  form--recovery  form--password" action="/" method="POST">
               <fieldset class="form__group">
                 <label class="form__label  form__label--password">
                   <input class="form__input  form__password" name="password" placeholder="New Password"
